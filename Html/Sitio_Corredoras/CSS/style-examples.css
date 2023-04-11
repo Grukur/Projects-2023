@@ -1,0 +1,172 @@
+/* Base pre settings */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Media screen set */
+@media screen and (max-width: 600px) {         
+    .window-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+/* Sticky setting for the footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Background Images and settings */
+.header-img {
+    min-height: 10vh;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.header-img div {
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.main-img{
+    min-height: 100vh;
+    background-image: url('');
+    background-position: center;
+}
+
+.main-img div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.footer-img{
+    min-height: 10vh;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg) ;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.footer-img div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* Head Links Bar */
+.container-flex{
+    display: flex;
+    border-bottom: 5px solid black;  
+    background-color: darkmagenta;
+    justify-content: space-around; 
+    padding-top: 5px;
+}
+
+/* Content */
+/* Slideshow */
+.container-slide{
+    position: relative;
+    flex-basis: content;
+}
+
+.mySlides{
+    display: none;
+    text-align: center;
+    flex: 1 1 100%;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    width: auto;
+    padding: 16px;
+    margin-top: 400px;
+    color: purple;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Image Hover set */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.numText{
+    display: flex;
+    flex: 1 1 100%;
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-img {
+    display: flex;
+    width: 100%;
+}
+
+.caption-container{
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 16.66%;
+}
+
+.demo  {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}

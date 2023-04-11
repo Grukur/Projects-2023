@@ -1,0 +1,153 @@
+
+/* Base pre settings */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sticky setting for the footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+
+main {
+    flex: 1 1 100%;
+}
+
+/* Background Images and settings */
+.header-img {
+    min-height: 10vh;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.header-img div {
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.main-img{
+    min-height: 100vh;
+    background-image: url('');
+    background-position: center;
+}
+
+.main-img div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.footer-img{
+    min-height: 10vh;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg) ;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.footer-img div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* Head Links Bar */
+.container-flex{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkmagenta;
+    border-bottom: 5px solid black;    
+    padding-top: 5px;
+}
+
+/* Media screen set */
+@media screen and (max-width: 600px) {
+  .form-container .form-2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 5px 5px 5px 5px;           
+  }
+}
+
+/* Content */
+/* Form */
+.form-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 180, 0, .7);
+  border: thick solid black;
+  border-radius: 50px;
+  margin: 5% 25%;    
+}
+
+.img-form {
+  border: thick solid rgba(0, 100, 0, .9);
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 100%; 
+   
+}
+
+.form-1 {
+ 
+ 
+}
+
+.form-2 {
+  display: flex;
+
+}
+
+.inputs {
+  display: inline;
+  border-radius: 10px;
+  border: medium solid black;
+  background-color: rgba(250, 380, 2500, .7);
+  text-align: center;
+  margin-top: 5px;  
+  padding: 8px 35px;  
+  width: 100%;
+}
+
+.sex-1 {
+  display: flex;
+  flex-flow: row;
+  margin: 5px;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.dot-1 {
+  margin: 5px;
+}
+
+.btn-father {
+  display: flex;
+  flex-flow: column;
+}
+
+.btn-1 {
+  margin: 5px;
+  background-color: rgba(0, 100, 0, .8);
+  border: medium solid rgba(0, 70, 0, .8);
+  border-radius: 15px;
+  padding: 5px 15px;
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+
